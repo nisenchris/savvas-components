@@ -1,0 +1,16 @@
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<mix = 'http://www.jcp.org/jcr/mix/1.0'>
+<viant = 'http://www.jahia.org/viagem/nt/2.0'>
+
+[viant:savvasComponents] > jmix:droppableContent, jmix:editorialContent mixin
+
+[viant:program] > jnt:content, viant:savvasComponents, mix:title
+ - logo (weakreference, picker[type='image'])
+ - discipline (string)
+ - copyright (string)
+ - grade (string)
+ - deliveryMethod (string)
+ - device (string)
+ - operatingSystem (string)
+ - image (weakreference, picker[type='image'])
